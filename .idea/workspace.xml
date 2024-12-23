@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/com/hclusclientfxv2/APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/APP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/com/hclusclientfxv2/ClientFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ClientFx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/com/hclusclientfxv2/ControllerCaricaDaFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/com/hclusclientfxv2/ControllerControllo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerControllo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/com/hclusclientfxv2/menuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/menuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/resources/com/hclusclientfxv2/caricaDaDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/caricaDaDB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/resources/com/hclusclientfxv2/caricaDaFile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/caricaDaFile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/resources/com/hclusclientfxv2/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/resources/com/immagini/dataminigimage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/immagini/dataminigimage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/src/main/resources/com/immagini/logoUniba.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/immagini/logoUniba.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/APP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/APP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/ClientFx.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ClientFx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/ControllerCaricaDaDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/ControllerControllo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerControllo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/hclusclientfxv2/menuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/immagini/dataminigimage.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/immagini/dataminigimage.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/com/immagini/logoUniba.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/immagini/logoUniba.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/H-CLUSclientFXv2/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="gitHubweb/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ClaudiodeCandia &lt;dodi.decandia03@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="javadoc" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2o4ngNNECEp4HXX94mTMXpjV23x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.APP.executor": "Run",
+    "Application.ClientFx.executor": "Run",
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Utente/IdeaProjects/H-CLUSclientFXv2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.APP">
+    <configuration name="APP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hclusclientfxv2.APP" />
+      <module name="H-CLUSclientFXv2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hclusclientfxv2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientFx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hclusclientfxv2.ClientFx" />
+      <module name="H-CLUSclientFXv2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hclusclientfxv2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hclusclientfxv2.HelloApplication" />
+      <module name="H-CLUSclientFXv2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hclusclientfxv2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.APP" />
+        <item itemvalue="Application.ClientFx" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="" />
+      <created>1730137835762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730137835762</updated>
+      <workItem from="1730137838805" duration="2536000" />
+      <workItem from="1730196368425" duration="21953000" />
+      <workItem from="1730282853402" duration="8133000" />
+      <workItem from="1730372376974" duration="10323000" />
+      <workItem from="1730546398465" duration="7267000" />
+      <workItem from="1730649300707" duration="7234000" />
+      <workItem from="1730818624312" duration="4451000" />
+      <workItem from="1730828511247" duration="1402000" />
+      <workItem from="1730915774109" duration="152000" />
+      <workItem from="1731080043489" duration="3775000" />
+      <workItem from="1733143826089" duration="2029000" />
+      <workItem from="1733506941845" duration="6126000" />
+      <workItem from="1734780238935" duration="2222000" />
+      <workItem from="1734968268187" duration="2901000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit iniziale del nuovo branch">
+      <option name="closed" value="true" />
+      <created>1730221870758</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730221870758</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit iniziale del nuovo branch">
+      <option name="closed" value="true" />
+      <created>1730222991709</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730222991709</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit iniziale del nuovo branch">
+      <option name="closed" value="true" />
+      <created>1730288741822</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730288741822</updated>
+    </task>
+    <task id="LOCAL-00004" summary="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java">
+      <option name="closed" value="true" />
+      <created>1734969856888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734969856888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit iniziale del nuovo branch" />
+    <MESSAGE value="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java" />
+  </component>
+</project>

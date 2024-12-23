@@ -4,15 +4,30 @@ package com.hclusclientfxv2;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-
-
 import java.io.IOException;
 
 
+/**
+ * Classe principale dell'applicazione H-CLUSclientFXv2.
+ * <p>
+ * Estende {@link javafx.application.Application} per sfruttare il framework JavaFX,
+ * che fornisce il ciclo di vita di un'applicazione grafica. Questo include la gestione
+ * dell'avvio, della configurazione della finestra principale (stage) e dell'interfaccia utente.
+ * </p>
+ * <p>
+ * La classe avvia l'interfaccia utente caricando il file FXML e configurando la finestra principale.
+ * </p>
+ */
 public class APP extends Application {
+
+    /**
+     * Configura e mostra la finestra principale dell'applicazione.
+     *
+     * @param stage il contenitore principale della finestra.
+     * @throws IOException se il file FXML non viene caricato correttamente.
+     */
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -25,7 +40,11 @@ public class APP extends Application {
 
 
     }
-    //entry point dell'applicazione.
+    /**
+     * Punto di ingresso dell'applicazione JavaFX.
+     *
+     * @param args argomenti della riga di comando.
+     */
     public static void main(String[] args) {
         launch();//metodo statico ereditato dalla classe javafx.application.Application. È il punto di ingresso
         // per le applicazioni JavaFX e ha il compito di avviare il toolkit JavaFX e configurare l'applicazione.
