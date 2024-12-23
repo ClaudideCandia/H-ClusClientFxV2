@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hclusclientfxv2.ControllerCaricaDaFile">
+   <children>
+      <Button fx:id="confermaSceltaFile" layoutX="462.0" layoutY="45.0" mnemonicParsing="false" text="Conferma" />
+      <Label fx:id="etichetta1caricaDaFile" layoutX="14.0" layoutY="49.0" text="Scegli dendogramma da caricare" />
+      <TextField fx:id="fieldFile" layoutX="226.0" layoutY="45.0" promptText="inserire nome file" />
+      <Label fx:id="etichettaRisultato" layoutX="250.0" layoutY="70.0" prefHeight="25.0" prefWidth="100.0" textAlignment="CENTER" wrapText="true" />
+      <TextArea fx:id="textAreaRisultati" layoutX="14.0" layoutY="137.0" prefHeight="250.0" prefWidth="575.0" promptText="qui verranno visualizzati i risultati" wrapText="true" />
+      <Button fx:id="home" layoutX="75.0" layoutY="83.0" mnemonicParsing="false" text="🏠" />
+   </children>
+</Pane>
