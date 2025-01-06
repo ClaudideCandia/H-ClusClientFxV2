@@ -1,0 +1,42 @@
+Manuale d'uso del Client "H-CLUSClientFxV2"!
+
+
+Come avviare il programma:
+Prima fase: avviare il server.
+per avviare il server aprire un qualsiasi IDE e lanciare l'esecuzione del main della classe  multiServer.java
+Una volta che il programma sarà stato avviato sul terminale leggerete "Server Avviato" allora procedere alla seconda fase.
+(per compiere correttamente questa fase avrete bisogno di aver installato correttamente il programma)
+
+Seconda fase: avviare il client.
+per avviare il client aprire un qualsiasi IDE e lanciare l'esecuzione del main della classe APP.java
+si aprirà una nuova finestra con il logo dell'UNIBA intitolata H-CLUSClientFxV2
+
+in questa finestra vedrete la pagina principale del programma con un selettore di azioni in alto al centro.
+questo selettore ha due scelte possibili denominate:"database" e "file" le quali rispettivamente permettono di:
+1) calcolare un nuovo HCM dato il nome di una delle tabelle presenti nel databese allocato su server.
+2) caricare un dendogramma memorizzato nella memoria del server tramite il nome che gli è stato assegnato.
+
+Manuale d'uso per interfaccia DataBase:
+1. selezionare il nome di una tabella tramite il selettore posizionato in alto al centro, quindi, fare click sulla tabella scelta.
+2. selezionare tipologia di clacolo tramite i due pulsanti (posizionati in colonna sulla sinistra) : SingleLinkDistance , AvarageLinkDistance;
+al click apparirà una scritta verde affianco al tasto premuto per indicarne l'avvenuta selezione.
+3. inserire numericamente il livello di profondità (nella casella di testo a destra del pulsante AvarageLinkDistance).
+4. premere il tasto conferma per far eseguire al server il calcolo dell'HCM.
+
+a questo punto il risultato sarà visualizzabile nel campo di testo in fondo alla schermata.
+PASSI FACOLTATIVI:
+Salvare il risultato: dopo aver visualizzato il risultato lo si può salvare:
+inserendo il nome con cui lo si vuole denominare nella stessa casella di testo usata per inserire la profondità, premere il pulsante salva.
+Premere il pulsante "home" (icona di una casetta nera) per tornare alla schermata principale.
+
+Manuale d'uso per interfaccia File:
+
+inserire il nome del dendogramma da caricare nella casella di testo (posizionata in alto al centro),
+premere il tasto Conferma,
+visualizzare il risultato nell'area di testo a fondo schermata,
+premere il tasto "home" per tornare alla schermata principale.
+
+IMPORTANTE
+
+E' fondamentale completare tutti i passaggi di un operazione prima di premere il tasto conferma altrimenti si rischia il blocco dell'applicazione.
+se si desidera NON completare un'operazione premere il tasto home così si scongiura la possibilità di bloccare l'applicazione. 
