@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java">
+    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menuController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +172,10 @@
       <workItem from="1734780238935" duration="2222000" />
       <workItem from="1734968268187" duration="2901000" />
       <workItem from="1734972535224" duration="692000" />
-      <workItem from="1735832205335" duration="321000" />
+      <workItem from="1735832205335" duration="722000" />
+      <workItem from="1736006350969" duration="1676000" />
+      <workItem from="1736010071775" duration="409000" />
+      <workItem from="1736162654510" duration="3396000" />
     </task>
     <task id="LOCAL-00001" summary="commit iniziale del nuovo branch">
       <option name="closed" value="true" />
@@ -208,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734972980278</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java">
+      <option name="closed" value="true" />
+      <created>1735832801329</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735832801329</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +234,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit iniziale del nuovo branch" />
     <MESSAGE value="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java" />
+    <MESSAGE value="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java" />
   </component>
 </project>

@@ -3,6 +3,8 @@ package com.hclusclientfxv2;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+
+import java.io.IO;
 import java.io.IOException;
 import java.util.List;
 
@@ -42,8 +44,12 @@ public class ControllerCaricaDaDB {
     @FXML
     private TextField fieldDepth;
 
+    int mode =0; // Modalità di clustering: 1 = Single Link, 2 = Average Link
+/*
     private boolean Single = false;
     private boolean Avarage = false;
+
+ */
 
     /**
      * Restituisce la ComboBox utilizzata per selezionare le tabelle del database.
@@ -63,7 +69,6 @@ public class ControllerCaricaDaDB {
      * </p>
      */
     public void initialize() {
-
         // Azione per il pulsante "Home"
         home.setOnAction((ActionEvent event) -> {
             try {
@@ -71,7 +76,7 @@ public class ControllerCaricaDaDB {
                 ClientFx riferimentoClient = ottieniClient(); // Ottiene il client
                 riferimentoClient.sendToServer("home"); // Notifica al server il ritorno alla home
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                mostraErrore("Errore durante la comunicazione con il server: " + e.getMessage());
             }
         });
 
@@ -79,8 +84,7 @@ public class ControllerCaricaDaDB {
         singleLinkDistanceButton.setOnAction(event -> {
             labelSelezioneSLD.setText("Selezionato!");
             labelSelezioneSLD.setStyle("-fx-text-fill: green;");
-            Single = true;
-            Avarage = false;
+            mode = 1;
             labelSelezioneALD.setText(""); // Pulisce l'altra etichetta
         });
 
@@ -88,8 +92,7 @@ public class ControllerCaricaDaDB {
         avarageLinkDistanceButton.setOnAction(event -> {
             labelSelezioneALD.setText("Selezionato!");
             labelSelezioneALD.setStyle("-fx-text-fill: green;");
-            Single = false;
-            Avarage = true;
+            mode = 2;
             labelSelezioneSLD.setText(""); // Pulisce l'altra etichetta
         });
 
@@ -100,27 +103,71 @@ public class ControllerCaricaDaDB {
 
         // Azione per il pulsante "Conferma"
         confermaDB.setOnAction(event -> {
-            String temp = fieldDepth.getText();
-            int depth = Integer.parseInt(temp); // Profondità dell'albero
-            int mode = Single ? 1 : 2; // Modalità di clustering: 1 = Single Link, 2 = Average Link
-            String tableName = comboTabelle.getSelectionModel().getSelectedItem();
+            try {
+                String temp = fieldDepth.getText();
+                int depth = Integer.parseInt(temp); // Profondità dell'albero
 
-            // Invio dei dati al server
-            riferimentoClient.sendToServer(tableName);
-            riferimentoClient.sendIntToServer(depth);
-            riferimentoClient.sendIntToServer(mode);
+                String tableName = comboTabelle.getSelectionModel().getSelectedItem();
 
-            // Ricezione del risultato dal server e aggiornamento dell'interfaccia
-            String risultato = riferimentoClient.receiveFromServer();
-            textAreaDB.setText(risultato);
-            fieldDepth.setText("nome file");
+                // Controllo dei parametri
+                if (tableName == null || tableName.trim().isEmpty()) {
+                    throw new IOException("Errore: Il nome della tabella non può essere nullo o vuoto.");
+                }
+
+                if (depth <= 0) {
+                    throw new IOException("Errore: Il valore di depth deve essere un intero positivo.");
+                }
+
+                if (mode < 1 || mode > 2) {
+                    throw new IOException("Errore: Il valore di mode deve essere 1 o 2.");
+                }
+
+                // Invio dei dati al server
+                riferimentoClient.sendToServer(tableName);
+                riferimentoClient.sendIntToServer(depth);
+                riferimentoClient.sendIntToServer(mode);
+
+                // Ricezione del risultato dal server e aggiornamento dell'interfaccia
+                String risultato = riferimentoClient.receiveFromServer();
+                textAreaDB.setText(risultato);
+                fieldDepth.setText("nome file");
+            } catch (NumberFormatException e) {
+                mostraErrore("Errore: Il valore della profondità deve essere un numero valido.");
+            } catch (IOException e) {
+                mostraErrore("Errore durante la comunicazione con il server: " + e.getMessage());
+            }
         });
 
         // Azione per il pulsante "Salva"
         salvaButton.setOnAction(event -> {
-            riferimentoClient.sendToServer("salva"); // Notifica al server di salvare
-            String nomeFile = fieldDepth.getText();
-            riferimentoClient.sendToServer(nomeFile); // Invia il nome del file da salvare
+            try {
+                String nomeFile = fieldDepth.getText();
+
+                // Controllo che il nome del file non sia vuoto o nullo
+                if (nomeFile == null || nomeFile.trim().isEmpty() || nomeFile.equals("nome file")) {
+                    throw new IOException("Errore: Il nome del file non può essere nullo o vuoto.");
+                }
+
+                // Notifica al server di salvare
+                riferimentoClient.sendToServer("salva");
+                riferimentoClient.sendToServer(nomeFile); // Invia il nome del file da salvare
+            } catch (IOException e) {
+                mostraErrore("Errore durante il salvataggio: " + e.getMessage());
+            }
         });
     }
+
+    /**
+     * Mostra un messaggio di errore all'utente.
+     *
+     * @param messaggio Il messaggio di errore da mostrare.
+     */
+    private void mostraErrore(String messaggio) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Errore");
+        alert.setHeaderText(null);
+        alert.setContentText(messaggio);
+        alert.showAndWait();
+    }
+
 }

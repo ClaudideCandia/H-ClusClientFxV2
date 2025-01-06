@@ -85,6 +85,7 @@ public class ControllerCaricaDaFile {
                 String nomeFile = fieldFile.getText();
                 rifC.sendToServer(nomeFile);
 
+
                 // Riceve il risultato dal server e lo visualizza nell'area di testo.
                 String risultato = (String) rifC.receiveFromServer();
                 textAreaRisultati.setText(risultato);
