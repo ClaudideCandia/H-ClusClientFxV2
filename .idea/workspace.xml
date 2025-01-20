@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java">
+    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="ripristino ultimo commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ClientFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ClientFx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/menuController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Utente/IdeaProjects/H-CLUSclientFXv2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Utente/Desktop/Consegna MAP (Ce la stiamo facendo)/Base&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -176,6 +172,8 @@
       <workItem from="1736006350969" duration="1676000" />
       <workItem from="1736010071775" duration="409000" />
       <workItem from="1736162654510" duration="3396000" />
+      <workItem from="1737372352420" duration="51000" />
+      <workItem from="1737383976400" duration="1232000" />
     </task>
     <task id="LOCAL-00001" summary="commit iniziale del nuovo branch">
       <option name="closed" value="true" />
