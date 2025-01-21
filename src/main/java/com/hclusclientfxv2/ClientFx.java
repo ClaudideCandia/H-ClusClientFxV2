@@ -31,8 +31,8 @@ public class ClientFx {
      */
     private ClientFx() {
         int port = 8080;
-        // inibito per prova String ip = "127.0.0.1"; // Indirizzo IP locale
-        String ip = "146.59.145.214";
+        // String ip = "127.0.0.1"; // Indirizzo IP locale
+       String ip = "146.59.145.214";
         try {
             clientSocket = new Socket(ip, port);
             out = new ObjectOutputStream(clientSocket.getOutputStream());

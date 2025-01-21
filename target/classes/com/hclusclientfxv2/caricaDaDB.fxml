@@ -18,7 +18,7 @@
       <Label fx:id="labelSelezioneALD" layoutX="225.0" layoutY="131.0" />
       <Button fx:id="salvaButton" layoutX="497.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Salva" />
       <Button fx:id="confermaDB" layoutX="497.0" layoutY="73.0" mnemonicParsing="false" text="conferma" />
-      <Button fx:id="home" layoutX="516.0" layoutY="36.0" mnemonicParsing="false" text="🏠" />
+      <Button fx:id="home" layoutX="498.0" layoutY="36.0" mnemonicParsing="false" text="Home 🏠" />
       <TextField fx:id="fieldDepth" layoutX="301.0" layoutY="127.0" promptText="inserire profondità" />
    </children>
 </Pane>

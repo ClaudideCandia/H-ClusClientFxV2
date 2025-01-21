@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import java.io.IOException;
-
+import com.hclusclientfxv2.ClientFx.*;
 
 /**
  * Classe principale dell'applicazione H-CLUSclientFXv2.
@@ -35,6 +35,10 @@ public class APP extends Application {
         Scene scene = new Scene(fxmlLoader.load());
         stage.getIcons().add(new Image(getClass().getResourceAsStream("/com/immagini/logoUniba.png")));
         stage.setTitle("H-CLUSclientFXv2");
+        stage.setOnCloseRequest(event -> {
+          ClientFx riferimentoClient = ClientFx.ottieniClient();
+          riferimentoClient.sendToServer("Close");
+        });
         stage.setScene(scene);
         stage.show();
 

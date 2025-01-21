@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="ripristino ultimo commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="cambiato ip di connessione al server con ip server remoto, eliminato import inutile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/APP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ClientFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ClientFx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/ControllerCaricaDaDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/caricaDaDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/caricaDaDB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/caricaDaFile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/hclusclientfxv2/caricaDaFile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/APP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/APP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ClientFx.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ClientFx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaDB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/caricaDaFile.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +179,10 @@
       <workItem from="1736010071775" duration="409000" />
       <workItem from="1736162654510" duration="3396000" />
       <workItem from="1737372352420" duration="51000" />
-      <workItem from="1737383976400" duration="1232000" />
+      <workItem from="1737383976400" duration="1884000" />
+      <workItem from="1737455180067" duration="2647000" />
+      <workItem from="1737469056195" duration="1131000" />
+      <workItem from="1737470660032" duration="2295000" />
     </task>
     <task id="LOCAL-00001" summary="commit iniziale del nuovo branch">
       <option name="closed" value="true" />
@@ -223,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735832801329</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cambiato ip di connessione al server con ip server remoto, eliminato import inutile">
+      <option name="closed" value="true" />
+      <created>1737385308839</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737385308839</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +250,7 @@
     <MESSAGE value="commit iniziale del nuovo branch" />
     <MESSAGE value="aggiunti i javadoc per APP.java , ClientFx.java e ControllerCaricaDaDB.java" />
     <MESSAGE value="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunti i javadoc per ControllerCaricaDaFile.java , menuController.java" />
+    <MESSAGE value="cambiato ip di connessione al server con ip server remoto, eliminato import inutile" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambiato ip di connessione al server con ip server remoto, eliminato import inutile" />
   </component>
 </project>

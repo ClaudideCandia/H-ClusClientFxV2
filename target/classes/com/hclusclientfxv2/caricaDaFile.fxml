@@ -13,6 +13,6 @@
       <TextField fx:id="fieldFile" layoutX="226.0" layoutY="45.0" promptText="inserire nome file" />
       <Label fx:id="etichettaRisultato" layoutX="250.0" layoutY="70.0" prefHeight="25.0" prefWidth="100.0" textAlignment="CENTER" wrapText="true" />
       <TextArea fx:id="textAreaRisultati" layoutX="14.0" layoutY="137.0" prefHeight="250.0" prefWidth="575.0" promptText="qui verranno visualizzati i risultati" wrapText="true" />
-      <Button fx:id="home" layoutX="75.0" layoutY="83.0" mnemonicParsing="false" text="🏠" />
+      <Button fx:id="home" layoutX="75.0" layoutY="83.0" mnemonicParsing="false" text="Home 🏠" />
    </children>
 </Pane>
