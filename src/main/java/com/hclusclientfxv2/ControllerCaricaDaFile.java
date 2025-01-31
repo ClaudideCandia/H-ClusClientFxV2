@@ -4,13 +4,11 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import java.util.List;
 
 import static com.hclusclientfxv2.ControllerControllo.switchScene;
 
@@ -32,9 +30,8 @@ public class ControllerCaricaDaFile {
     @FXML
     Label etichetta1caricaDaFile;
 
-    /** Campo di testo in cui l'utente inserisce il percorso del file da caricare. */
-    @FXML
-    TextField fieldFile;
+
+
 
     /** Etichetta per mostrare il risultato del caricamento o eventuali errori. */
     @FXML
@@ -43,8 +40,11 @@ public class ControllerCaricaDaFile {
     /** Area di testo per visualizzare i risultati ricevuti dal server. */
     @FXML
     TextArea textAreaRisultati;
+    /** menù di testo in cui l'utente inserisce il percorso del file da caricare. */
+    @FXML
+    ComboBox ComboFiles;
 
-    /** Istanza del client per la comunicazione con il server. */
+    /** Supporto per invocare l'Istanza (singoletto) del client per la comunicazione con il server. */
     ClientFx temp;
 
     /**
@@ -53,6 +53,8 @@ public class ControllerCaricaDaFile {
     public void initialize() {
         // Ottiene un riferimento al client per la comunicazione con il server.
         ClientFx rifC = temp.ottieniClient();
+        List<String> listaFilesHCM = rifC.reciveListFromServer();
+        ComboFiles.getItems().addAll(listaFilesHCM); // Popola la ComboBox
 
         // Configura l'azione del pulsante "home" per tornare alla schermata principale.
         home.setOnAction((ActionEvent event) -> {
@@ -66,10 +68,10 @@ public class ControllerCaricaDaFile {
 
         // Configura l'azione del pulsante "confermaSceltaFile" per gestire il caricamento del file.
         confermaSceltaFile.setOnAction((ActionEvent e) -> {
-            String esito = fieldFile.getText();
-
+            //ottengo stringa scelta dallo user.
+            String tableName = ComboFiles.getSelectionModel().getSelectedItem().toString();
             // Controlla se il campo di testo è vuoto.
-            if (esito.equals("")) {
+            if (tableName.equals("")) {
                 etichettaRisultato.setText("file non valido!");
                 etichettaRisultato.setStyle("-fx-text-fill: red");
 
@@ -82,7 +84,7 @@ public class ControllerCaricaDaFile {
                 timeline.play();
             } else {
                 // Implementa la logica di caricamento del file.
-                String nomeFile = fieldFile.getText();
+                String nomeFile = tableName;
                 rifC.sendToServer(nomeFile);
 
 

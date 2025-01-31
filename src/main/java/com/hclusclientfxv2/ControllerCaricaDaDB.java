@@ -68,6 +68,8 @@ public class ControllerCaricaDaDB {
      * </p>
      */
     public void initialize() {
+        //disabilito il pulsante salva per prevenire input inattesi.
+        salvaButton.setDisable(true);
         // Azione per il pulsante "Home"
         home.setOnAction((ActionEvent event) -> {
             try {
@@ -128,6 +130,8 @@ public class ControllerCaricaDaDB {
 
                 // Ricezione del risultato dal server e aggiornamento dell'interfaccia
                 String risultato = riferimentoClient.receiveFromServer();
+                //riabilito il pulsante salva in una zona "sicura".
+                salvaButton.setDisable(false);
                 textAreaDB.setText(risultato);
                 fieldDepth.setText("nome file");
             } catch (NumberFormatException e) {
@@ -160,6 +164,8 @@ public class ControllerCaricaDaDB {
      * Mostra un messaggio di errore all'utente.
      *
      * @param messaggio Il messaggio di errore da mostrare.
+     * eccezione personalizzata, usata per impedire allo user di inviare dati errati al server.
+     * istanzia un oggetto Alert per informare l'utente (graficamente) che i dati che si vuole inviare non soddisfano i requisiti per essere spediti al server.
      */
     private void mostraErrore(String messaggio) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
