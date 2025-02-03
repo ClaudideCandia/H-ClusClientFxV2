@@ -134,6 +134,8 @@ public class ControllerCaricaDaDB {
                 salvaButton.setDisable(false);
                 textAreaDB.setText(risultato);
                 fieldDepth.setText("nome file");
+                confermaDB.setDisable(true);
+
             } catch (NumberFormatException e) {
                 mostraErrore("Errore: Il valore della profondità deve essere un numero valido.");
             } catch (IOException e) {
@@ -158,6 +160,7 @@ public class ControllerCaricaDaDB {
                 mostraErrore("Errore durante il salvataggio: " + e.getMessage());
             }
         });
+
     }
 
     /**

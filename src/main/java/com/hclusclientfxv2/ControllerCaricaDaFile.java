@@ -54,6 +54,15 @@ public class ControllerCaricaDaFile {
         // Ottiene un riferimento al client per la comunicazione con il server.
         ClientFx rifC = temp.ottieniClient();
         List<String> listaFilesHCM = rifC.reciveListFromServer();
+        if(listaFilesHCM.isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Errore");
+            alert.setHeaderText(null);
+            alert.setContentText("directory inesistente o nessun file trovato");
+            alert.showAndWait();
+            confermaSceltaFile.setDisable(true);
+            textAreaRisultati.setDisable(true);
+        }
         ComboFiles.getItems().addAll(listaFilesHCM); // Popola la ComboBox
 
         // Configura l'azione del pulsante "home" per tornare alla schermata principale.
@@ -93,6 +102,7 @@ public class ControllerCaricaDaFile {
                 textAreaRisultati.setText(risultato);
             }
         });
+
     }
 }
 

@@ -20,6 +20,7 @@ public class ClientFx {
     private ObjectOutputStream out;
     private ObjectInputStream in;
     private static ClientFx instance;
+    private  static String IP;
 
     /**
      * Costruttore privato della classe.
@@ -29,12 +30,13 @@ public class ClientFx {
      * le variabili di connessione vengono resettate per prevenire errori futuri.
      * </p>
      */
-    private ClientFx() {
+    private ClientFx(String ip) {
         int port = 8080;
-        //String ip = "127.0.0.1"; // Indirizzo IP locale
-       String ip = "146.59.145.214";
+       // String ip = "127.0.0.1"; // Indirizzo IP locale.
+       //String ip = "146.59.145.214"; //indirizzo IP remoto test.
         try {
             clientSocket = new Socket(ip, port);
+            IP = ip;
             out = new ObjectOutputStream(clientSocket.getOutputStream());
             in = new ObjectInputStream(clientSocket.getInputStream());
             System.out.println("Connessione stabilita con il server su IP " + ip + " e porta " + port);
@@ -57,7 +59,14 @@ public class ClientFx {
      */
     public static synchronized ClientFx ottieniClient() {
         if (instance == null) {
-            instance = new ClientFx();
+            instance = new ClientFx(IP);
+        }
+        return instance;
+    }
+
+    public static synchronized ClientFx ottieniClient(String ip) {
+        if (instance == null) {
+            instance = new ClientFx(ip);
         }
         return instance;
     }

@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -61,6 +62,37 @@ public class menuController {
     @FXML
     private Button ConfermaSelezione;
 
+    /** Etichetta con messaggio **/
+    @FXML
+    Label labelServer1;
+
+    /** Etichetta con messaggio **/
+    @FXML
+    Label labelServer2;
+
+    /** Etichetta con messaggio **/
+    @FXML
+    Label labelServer3;
+
+    /** scorciatoia localHost **/
+    @FXML
+    Button localButton;
+
+    /** Campo di testo per l'IP **/
+    @FXML
+    TextField textFieldIP;
+
+    /** bottone conferma server **/
+    @FXML
+    Button confermaServerButton;
+    /** stringa ausiliaria per scelta server **/
+   static String ip;
+
+    /** flag per controllo eventi **/
+   static boolean done;
+
+
+
     /**
      * Metodo di inizializzazione che configura il comportamento della schermata principale.
      * Inizializza la ComboBox, imposta l'immagine del menu e definisce le azioni per il pulsante di conferma.
@@ -74,6 +106,25 @@ public class menuController {
         Image immagineMenu = new Image(getClass().getResourceAsStream("/com/immagini/dataminigimage.jpeg"));
         imageViewMenu.setImage(immagineMenu);
 
+        //implementazione scelta server.
+        ConfermaSelezione.setDisable(true);
+        localButton.setOnAction(event -> {
+            ip = "127.0.0.1";
+            labelServer3.setText("Selezionato!");
+            labelServer3.setStyle("-fx-text-fill: green;");
+            confermaServerButton.setDisable(true);
+            //riabilito il resto del programma.
+            ConfermaSelezione.setDisable(false);
+            done=true;
+        });
+
+        confermaServerButton.setOnAction(event -> {
+            ip = textFieldIP.getText();
+            localButton.setDisable(true);
+            ConfermaSelezione.setDisable(false);
+            done=true;
+        });
+
         // Configura l'azione del pulsante "ConfermaSelezione".
         ConfermaSelezione.setOnAction(event -> {
             // Recupera la scelta selezionata nella ComboBox.
@@ -85,7 +136,7 @@ public class menuController {
             } else if (scelta.equals(DataBase)) {
                 etichetta1.setText("DataBase");
                 sceltaComboMenu = DataBase;
-                final ClientFx clientRif = rif.ottieniClient();
+                final ClientFx clientRif = rif.ottieniClient(ip);
                 clientRif.sendToServer(DataBase);
                 System.out.println(sceltaComboMenu);
                 try {
@@ -95,7 +146,7 @@ public class menuController {
                 }
             } else {
                 etichetta1.setText("File");
-                final ClientFx clientRif = rif.ottieniClient();
+                final ClientFx clientRif = rif.ottieniClient(ip);
                 clientRif.sendToServer(File);
                 System.out.println(sceltaComboMenu);
                 try {
@@ -104,6 +155,13 @@ public class menuController {
                     throw new RuntimeException(e);
                 }
             }
+
         });
+        if(done){
+            confermaServerButton.setDisable(true);
+            localButton.setDisable(true);
+            ConfermaSelezione.setDisable(false);
+        }
+
     }
 }
