@@ -20,32 +20,32 @@ public class ControllerCaricaDaFile {
 
     /** Pulsante per confermare la scelta del file. */
     @FXML
-    Button confermaSceltaFile;
+  private  Button confermaSceltaFile;
 
     /** Pulsante per tornare alla schermata principale (home). */
     @FXML
-    Button home;
+    private Button home;
 
     /** Etichetta per indicare lo stato o fornire istruzioni all'utente. */
     @FXML
-    Label etichetta1caricaDaFile;
+    private Label etichetta1caricaDaFile;
 
 
 
 
     /** Etichetta per mostrare il risultato del caricamento o eventuali errori. */
     @FXML
-    Label etichettaRisultato;
+    private Label etichettaRisultato;
 
     /** Area di testo per visualizzare i risultati ricevuti dal server. */
     @FXML
-    TextArea textAreaRisultati;
+    private TextArea textAreaRisultati;
     /** menù di testo in cui l'utente inserisce il percorso del file da caricare. */
     @FXML
-    ComboBox ComboFiles;
+    private ComboBox ComboFiles;
 
     /** Supporto per invocare l'Istanza (singoletto) del client per la comunicazione con il server. */
-    ClientFx temp;
+    private  ClientFx temp;
 
     /**
      * Metodo di inizializzazione che configura i comportamenti dei pulsanti e delle azioni correlate.

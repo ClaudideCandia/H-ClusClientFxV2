@@ -20,20 +20,20 @@ import static com.hclusclientfxv2.ControllerControllo.switchScene;
 public class menuController {
 
     /** Istanza del client per comunicare con il server. */
-    ClientFx rif;
+   private static ClientFx rif;
 
     /** Etichetta per visualizzare messaggi o istruzioni all'utente. */
     @FXML
     private Label etichetta1;
 
     /** Stringa rappresentante l'opzione "DataBase" nel menu. */
-    String DataBase = "DataBase";
+    private String DataBase = "DataBase";
 
     /** Stringa rappresentante l'opzione "File" nel menu. */
-    String File = "File";
+    private String File = "File";
 
     /** Variabile che memorizza la scelta effettuata nel menu. */
-    String sceltaComboMenu = "";
+    private String sceltaComboMenu = "";
 
     /**
      * Restituisce la scelta effettuata dall'utente nella ComboBox.
@@ -56,7 +56,7 @@ public class menuController {
 
     /** ImageView per visualizzare un'immagine di benvenuto nel menu principale. */
     @FXML
-    ImageView imageViewMenu;
+    private ImageView imageViewMenu;
 
     /** Pulsante per confermare la scelta effettuata nella ComboBox. */
     @FXML
@@ -64,32 +64,32 @@ public class menuController {
 
     /** Etichetta con messaggio **/
     @FXML
-    Label labelServer1;
+    private Label labelServer1;
 
     /** Etichetta con messaggio **/
     @FXML
-    Label labelServer2;
+    private Label labelServer2;
 
     /** Etichetta con messaggio **/
     @FXML
-    Label labelServer3;
+    private Label labelServer3;
 
     /** scorciatoia localHost **/
     @FXML
-    Button localButton;
+    private Button localButton;
 
     /** Campo di testo per l'IP **/
     @FXML
-    TextField textFieldIP;
+    private TextField textFieldIP;
 
     /** bottone conferma server **/
     @FXML
-    Button confermaServerButton;
+    private Button confermaServerButton;
     /** stringa ausiliaria per scelta server **/
-   static String ip;
+    private static String ip;
 
     /** flag per controllo eventi **/
-   static boolean done;
+    private static boolean done;
 
 
 
