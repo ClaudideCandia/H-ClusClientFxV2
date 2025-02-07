@@ -36,8 +36,12 @@ public class APP extends Application {
         stage.getIcons().add(new Image(getClass().getResourceAsStream("/com/immagini/logoUniba.png")));
         stage.setTitle("H-CLUSclientFXv2");
         stage.setOnCloseRequest(event -> {
-          ClientFx riferimentoClient = ClientFx.ottieniClient();
-          riferimentoClient.sendToServer("Close");
+            try {
+                ClientFx riferimentoClient = ClientFx.ottieniClient();
+                riferimentoClient.sendToServer("Close");
+            }catch (RuntimeException e){
+                System.out.println(e.getMessage());
+            }
         });
         stage.setScene(scene);
         stage.show();
