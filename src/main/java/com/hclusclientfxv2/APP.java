@@ -2,6 +2,7 @@
 package com.hclusclientfxv2;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -39,8 +40,11 @@ public class APP extends Application {
             try {
                 ClientFx riferimentoClient = ClientFx.ottieniClient();
                 riferimentoClient.sendToServer("Close");
-            }catch (RuntimeException e){
-                System.out.println(e.getMessage());
+            } catch (RuntimeException e) {
+                System.err.println("Chiusura del client: " + e.getMessage());
+            } finally {
+                Platform.exit();  // Chiude il ciclo di vita JavaFX
+                System.exit(0);   // Termina il processo
             }
         });
         stage.setScene(scene);

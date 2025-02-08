@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="modificate le visibilità degli attributi, aggiunto uml delle classi (in sospeso uml dei package)">
+    <list default="true" id="9bff0038-e94e-4e32-969c-900a7883dd03" name="Changes" comment="sistemato errore di chiusura (mancava gestione eccezione in entry point)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/APP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hclusclientfxv2/APP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hclusclientfxv2/ControllerCaricaDaFile.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,8 @@
       <workItem from="1738513324533" duration="337000" />
       <workItem from="1738575275651" duration="6857000" />
       <workItem from="1738856944402" duration="11267000" />
-      <workItem from="1738942984501" duration="828000" />
+      <workItem from="1738942984501" duration="4314000" />
+      <workItem from="1739009014027" duration="748000" />
     </task>
     <task id="LOCAL-00001" summary="commit iniziale del nuovo branch">
       <option name="closed" value="true" />
@@ -280,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738869907699</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="sistemato errore di chiusura (mancava gestione eccezione in entry point)">
+      <option name="closed" value="true" />
+      <created>1738943950927</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738943950927</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +303,7 @@
     <MESSAGE value="modificata la gestione degli input testuali da parte dello user in modalità File.&#10;adesso lo user non inserirà più manualmente i nomi dei file da caricare ma li selezionerà con un menù." />
     <MESSAGE value="aggiunta la scelta del server" />
     <MESSAGE value="modificate le visibilità degli attributi, aggiunto uml delle classi (in sospeso uml dei package)" />
-    <option name="LAST_COMMIT_MESSAGE" value="modificate le visibilità degli attributi, aggiunto uml delle classi (in sospeso uml dei package)" />
+    <MESSAGE value="sistemato errore di chiusura (mancava gestione eccezione in entry point)" />
+    <option name="LAST_COMMIT_MESSAGE" value="sistemato errore di chiusura (mancava gestione eccezione in entry point)" />
   </component>
 </project>
