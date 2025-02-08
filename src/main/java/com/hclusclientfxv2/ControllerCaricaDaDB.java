@@ -120,7 +120,7 @@ public class ControllerCaricaDaDB {
                 }
 
                 if (mode < 1 || mode > 2) {
-                    throw new IOException("Errore: Il valore di mode deve essere 1 o 2.");
+                    throw new IOException("Errore: Selezionare una modalità di linking (Single o Avarage).");
                 }
 
                 // Invio dei dati al server
